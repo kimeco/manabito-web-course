@@ -3,3 +3,171 @@
 *::after {
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f2ea;
+  font-size: 1.6rem;
+}
+
+body,
+a {
+  color: #624f3b;
+}
+
+h1, h2, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+.l-wrapper,
+.pagetop,
+footer {
+  margin: 0 auto;
+  width: 840px;
+}
+
+header {
+  margin: 0 auto 20px;
+  padding: 30px 0 0;
+}
+
+.logo {
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.global-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.global-nav ul li {
+  width: 25%;
+}
+
+.global-nav ul li:not(:last-child) {
+  border-right: solid 1px #fff;
+}
+
+.global-nav ul li a {
+  background-color: #4a371c;
+  color: #fff;
+  display: block;
+  font-size: 1.4rem;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.global-nav ul li:first-child a {
+  border-radius: 6px 0 0 6px;
+}
+
+.global-nav ul li:last-child a {
+  border-radius: 0 6px 6px 0;
+}
+
+.global-nav ul li a:hover {
+  background-color: #ded9c1;
+  color: #624f3b;
+}
+
+.l-wrapper {
+  padding: 0 0 100px;
+  position: relative;
+}
+
+.breadcrumb {
+  margin: 0 0 20px;
+}
+
+.breadcrumb ol {
+  display: flex;
+}
+
+.breadcrumb ol li:not(:last-child)::after {
+  content: ">";
+  margin: 0 10px;
+}
+
+.breadcrumb ol li,
+.breadcrumb ol li a {
+  font-size: 1.4rem;
+}
+
+.breadcrumb ol li a {
+  text-decoration: underline;
+}
+
+.l-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+main h1 {
+  background-image: url(../images/bg_h1_head.png), url(../images/bg_h1_bottom.png);
+  background-position: left top, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  font-size: 2.4rem;
+  padding: 36px 0 36px 66px;
+  width: 570px;
+}
+
+.l-side-area {
+  width: 230px;
+}
+
+.side-banner:not(:last-child) {
+  margin: 0 0 30px;
+}
+
+.side-banner a {
+  display: block;
+  font-size: 1.4rem;
+}
+
+.side-banner a:hover {
+  opacity: .8;
+}
+
+.side-banner a img {
+  display: flex;
+}
+
+.side-banner a img:not(:last-child) {
+  margin: 0 0 8px;
+}
+
+.pagetop {
+  background: url(../images/bg_arrow.png) no-repeat left center;
+  bottom: 0;
+  height: 28px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  text-decoration: underline;
+  width: 170px;
+}
+
+footer {
+  background: url(../images/bg_footer.png) no-repeat left top;
+  font-size: 1.4rem;
+  padding: 16px 0 20px;
+  text-align: center;
+}
+
+footer address {
+  font-style: normal;
+  margin: 0 0 10px;
