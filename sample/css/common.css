@@ -172,3 +172,19 @@ footer address {
   font-style: normal;
   margin: 0 0 10px;
 }
+
+@media screen and (max-width: 767px) {
+  header,
+  .l-wrapper,
+  .pagetop,
+  footer {
+    width: 100%;
+  }
+  main,
+  main h1,
+  .l-side-area{
+  width: 100%;
+}
+.l-contents{
+  flex-wrap: wrap;}
+}
