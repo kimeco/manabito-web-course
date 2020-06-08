@@ -120,13 +120,16 @@ header {
   justify-content: space-between;
 }
 
+main{
+  width: 570px;
+}
+
 main h1 {
   background-image: url(../images/bg_h1_head.png), url(../images/bg_h1_bottom.png);
   background-position: left top, left bottom;
   background-repeat: no-repeat, no-repeat;
   font-size: 2.4rem;
   padding: 36px 0 36px 66px;
-  width: 570px;
 }
 
 .l-side-area {
@@ -176,12 +179,46 @@ footer address {
   font-style: normal;
   margin: 0 0 10px;
 }
+/*ホームここから*/
+main h2{
+  background-image:url(../images/bg_h2_head.png),url(../images/bg_h2_bottom.png);
+  background-repeat: no-repeat,repeat-x;
+  background-position: left top, left bottom;
+  font-size: 2rem;
+  margin: 0 0 10px;
+  padding: 16px 0 16px 24px;
+}
+
+.topics-list li{
+  border-bottom: 1px dotted #333333;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 24px 0;
+}
+
+.topics-list li time,
+.topics-list li span{
+  display: block;}
+
+.topics-list li time{
+  font-weight: bold;
+  width: 130px;
+}
+
+.topics-list li span{
+  width: 400px;
+}
+
+
+/*ホームここまで*/
 
 @media screen and (max-width: 767px) {
   .sp{
   display: block;
+  padding: 24px 4%;
   }
-  
+
   header,
   .l-wrapper,
   footer {
@@ -226,4 +263,22 @@ footer address {
   main{
     margin: 0 0 60px;
   }
+/* index start */
+  .topics-list{
+    padding: 0 4%;
+  }
+
+  .topics-list li{
+    display: block;
+  }
+
+  .topics-list li time,
+  .topics-list li span{
+    width:100%;
+  }
+  .topics-list li time{
+    margin: 0 0 4px;
+  }
+  /* index end */
+
 }
