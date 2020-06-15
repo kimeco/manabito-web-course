@@ -180,6 +180,10 @@ footer address {
   margin: 0 0 10px;
 }
 /*ホームここから*/
+.bx-wrapper{
+  margin-bottom:30px;
+}
+
 main h2{
   background-image:url(../images/bg_h2_head.png),url(../images/bg_h2_bottom.png);
   background-repeat: no-repeat,repeat-x;
@@ -264,6 +268,11 @@ main h2{
     margin: 0 0 60px;
   }
 /* index start */
+  .slideshow img{
+    height: auto;
+    width: 100%;
+
+  }
   .topics-list{
     padding: 0 4%;
   }
