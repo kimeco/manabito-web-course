@@ -293,8 +293,33 @@ main h2{
 .plan-table td {
   line-height: 1.5;
 }
-
 /*plan end*/
+/*fair start*/
+.fair-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0 0 30px;
+}
+
+.fair-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fair-list li{
+  width: 180px;
+}
+
+.fair-list img{
+
+}
+
+.fair-list figcaption{
+  font-size: 1.4rem;
+}
+
+/*fair start*/
+
 @media screen and (max-width: 767px) {
   .sp{
   display: block;
