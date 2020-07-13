@@ -253,8 +253,46 @@ main h2{
 
 /*concepr end*/
 /*paln start*/
+.plan-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0 0 30px;
+}
 
+.font-bold {
+  font-weight: bold;
+}
 
+.plan-table {
+  border-collapse: collapse;
+}
+
+.plan-table thead tr {
+  background-color: #f0e7cf;
+}
+
+.plan-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.plan-table tbody tr:nth-child(even) {
+  background-color: #f5f2f0;
+}
+
+.plan-table th,
+.plan-table td {
+  font-size: 1.4rem;
+  border: solid 1px #9e9076;
+  padding: 18px 14px;
+}
+
+.plan-table th:first-child {
+  width: 100px;
+}
+
+.plan-table td {
+  line-height: 1.5;
+}
 
 /*plan end*/
 @media screen and (max-width: 767px) {
@@ -339,6 +377,19 @@ main h2{
   .concept-article img{
     height: auto;
     width: 100%;
+  }
+
+  .plan-description {
+    padding: 0 4%;
+  }
+
+  .plan-table-wrapper {
+    overflow-x: scroll;
+    margin: 0 4%;
+  }
+
+  .plan-table {
+    width: 570px;
   }
 }
 @media screen and (max-width: 320px) {
