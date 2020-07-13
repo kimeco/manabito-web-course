@@ -252,26 +252,58 @@ main h2{
 
 
 /*concepr end*/
+/* plan start */
+.plan-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0 0 30px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.plan-table {
+  border-collapse: collapse;
+}
+
+.plan-table thead tr {
+  background-color: #f0e7cf;
+}
+
+.plan-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.plan-table tbody tr:nth-child(even) {
+  background-color: #f5f2f0;
+}
+
+.plan-table th,
+.plan-table td {
+  font-size: 1.4rem;
+  border: solid 1px #9e9076;
+  padding: 18px 14px;
+}
+
+.plan-table th:first-child {
+  width: 100px;
+}
+
+.plan-table td {
+  line-height: 1.5;
+}
+/* plan end */
+
 @media screen and (max-width: 767px) {
-  .sp{
-  display: block;
-  padding: 24px 4%;
+  .sp {
+    display: block;
   }
 
   header,
   .l-wrapper,
   footer {
     width: 100%;
-  }
-
-  main,
-  main h1,
-  .l-side-area {
-    width: 100%;
-  }
-
-  .l-contents{
-  flex-wrap: wrap;
   }
 
   .global-nav ul {
@@ -283,46 +315,95 @@ main h2{
   }
 
   .global-nav ul li:not(:last-child) {
-    border-bottom: solid 1px #fff;
     border-right: none;
+    border-bottom: solid 1px #fff;
   }
 
-  .global-nav ul li:first-child a ,
+  .global-nav ul li:first-child a,
   .global-nav ul li:last-child a {
     border-radius: 0;
   }
+
+  main,
+  main h1,
+  .l-side-area {
+    width: 100%;
+  }
+
+  main {
+    margin: 0 0 60px;
+  }
+
+  .l-contents {
+    flex-wrap: wrap;
+  }
+
   .side-banner {
-    width: 230px;
     margin: 0 auto;
+    width: 230px;
   }
 
   .side-banner:not(:last-child) {
     margin: 0 auto 30px;
   }
-  main{
-    margin: 0 0 60px;
-  }
-/* index start */
-  .slideshow img{
+
+  /* index start */
+  .slideshow img {
     height: auto;
     width: 100%;
-
   }
-  .topics-list{
+
+  .topics-list {
     padding: 0 4%;
   }
 
-  .topics-list li{
+  .topics-list li {
     display: block;
   }
 
   .topics-list li time,
-  .topics-list li span{
-    width:100%;
+  .topics-list li span {
+    width: 100%;
   }
-  .topics-list li time{
+
+  .topics-list li time {
     margin: 0 0 4px;
   }
   /* index end */
 
+  /* concept start*/
+  .concept-article {
+    padding: 0 4%;
+  }
+
+  .concept-article:nth-of-type(1) figure,
+  .concept-article:nth-of-type(2) figure {
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .concept-article img {
+    height: auto;
+    width: 100%;
+  }
+  /* concept end */
+ /* plan start */
+  .plan-description {
+    padding: 0 4%;
+  }
+
+  .plan-table-wrapper {
+    overflow-x: scroll;
+    margin: 0 4%;
+  }
+
+  .plan-table {
+    width: 570px;
+  }
+  /* plan end */
+}
+  @media screen and (max-width: 320px) {
+  .concept-article h2 {
+    font-size: 1.8rem;
+  }
 }
