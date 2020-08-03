@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HOTEL IMPERIAL RESORT TOKYO</title>
+  <title>お問い合わせ | HOTEL IMPERIAL RESORT TOKYO</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -29,12 +29,57 @@
     <nav class="breadcrumb">
       <ol>
         <li><a href="index.html">ホーム</a></li>
-        <li>結婚式場のコンセプト</li>
+        <li>お問い合わせ</li>
       </ol>
     </nav>
     <div class="l-contents">
       <main>
-        <h1>結婚式場のコンセプト</h1>
+        <h1>お問い合わせ</h1>
+       <p class="cantact-description">
+         会場やプランについてのお問い合わせは、下記フォームよりお気軽にお寄せください。
+       </p>
+       <ol class="contact-caution">
+         <li>必要事項を記入し、「確認する」をクリックしてください。</li>
+         <li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+       </ol>
+       <form action="" method="POST">
+         <table class="contact-form">
+           <tr>
+             <th>
+               <label for="name">お名前</label>
+             </th>
+             <td>
+               <input type="text" name="name" id="name" placeholder="例）テスト" required autofocus>
+             </td>
+           </tr>
+           <tr>
+             <th>
+               <label for="mail">メールアドレス</label>
+             </th>
+             <td>
+               <input type="email" name="mail" id="mail" placeholder="例）aaa@example.com" required>
+             </td>
+           </tr>
+           <tr>
+             <th>お問い合わせの種類</th>
+             <td>
+               <input type="radio" name="kind" value="0" id="kind0">
+               <label for="kind0">事前のご相談</label>
+               <input type="radio" name="kind" value="1" id="kind1">
+               <label for="kind1">その他</label>
+             </td>
+           </tr>
+           <tr>
+             <th>
+               <label for="detail">内容</label>
+             </th>
+             <td>
+               <textarea name="detail" id="detail"></textarea>
+             </td>
+           </tr>
+         </table>
+         <input type="submit" value="送信する">
+       </form>
       </main>
       <div class="l-side-area">
         <div class="side-banner">
