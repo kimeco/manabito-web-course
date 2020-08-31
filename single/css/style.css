@@ -6,12 +6,46 @@ html{
 *::before,
 *::after{
   box-sizing: border-box;
-
 }
+
 body{
-  background: #151515 url('../images/bg.png') no-repeat fixed bottom;
+  background: #151515 url('../images/bg.png') no-repeat fixed left bottom;
   background-size: cover;
   color: #fff;
   font-size: 1.4rem;
-  font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: Raleway,'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   text-align: center;
+}
+
+header{
+  padding: 170px 0 80px;
+}
+
+.site-title{
+  font-size: 7.6rem;
+  margin: 0 0 40px;
+}
+
+.site-title-sub{
+  display: block;
+  font-size: 2.2rem;
+  margin: 0 0 50px;
+}
+
+.site-title-sub::before,
+.site-title-sub::after{
+  background-color: #fff;
+  display: inline-block;
+  content: '';
+  height: 2px;
+  vertical-align: middle;
+  width: 140px;
+}
+
+.site-title-sub::before{
+  margin: 0 30px 0 0;
+}
+
+.site-title-sub::after{
+  margin: 0 0 0 30px;
+}
