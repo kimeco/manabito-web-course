@@ -156,11 +156,83 @@ header{
 .skill-list li{
   width: calc(100% / 3);
 }
+.skill-icon {
+  border: solid 4px #f1b400;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  height: 150px;
+  line-height: 142px;
+  margin: 0 0 30px;
+  width: 150px;
+}
 
+.skill-icon-reverse {
+  transform: scaleX(-1);
+}
 .skill-title{
   font-size: 2rem;
   margin: 0 0 20px;
 }
 .skill-description{
   line-height: 2;
+}
+.l-contact {
+  padding: 110px 0 150px;
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.contact-form input[type=text],
+.contact-form textarea {
+  border-radius: 0;
+  background-color: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.4);
+  color: #ffff;
+  display: block;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, .5) inset;
+}
+
+.contact-form input[type=text]{
+  margin: 0 0 10px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  margin: 0 0 40px;
+}
+
+.contact-form input[type=submit]{
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 5px;
+  color: rgba(255,255,255,.6);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  width: 200px;
+}
+
+.contact-form input[type=submit]:hover{
+  background-color: rgba(255,255,255,.05);
+}
+
+footer{
+  padding: 12px 0;
+  font-size: 1.3rem;
+}
+
+@media (max-width:600px) {
+
 }
